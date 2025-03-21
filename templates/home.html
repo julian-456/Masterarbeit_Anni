@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Einstellungen</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Einstellungen und Privatsphäre</h2>
+        <div class="section">
+            <h3>So nutzt du Instagram</h3>
+            <div class="section-objects">
+                <div class="option" onclick="redirectTo('/kontenübersicht')"> 
+                        <img src="{{ url_for('static', filename='pictures/profil_bearbeiten.png') }}" alt="Sprache Icon" class="left-img">
+                        Profil bearbeiten
+                        <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/deine_aktivitäten.png') }}" alt="Sprache Icon" class="left-img">
+                    Deine Aktivitäten
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/Benachrichtigungen.png') }}" alt="Sprache Icon" class="left-img">
+                    Benachrichtigungen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>Wer kann deine Inhalte sehen</h3><div class="section-objects">
+                <div class="option" onclick="redirectTo('/in_arbeit')">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Konto Privatsphäre
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Enge Freunde
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Blockiert
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Story und Live verbergen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Wie andere mit dir interagieren können</h3>
+            <div class="section-objects">
+                <div class="option" onclick="redirectTo('/in_arbeit')">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Nachrichten und Story-ANtworten
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Markierungen und Erwähnungen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Teilen und wiederverwenden
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Eingeschränkte Konten
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Nachrichten und Kommentare verbergen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Was du siehst</h3>
+            <div class="section-objects">
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Stummgeschaltete Konten</div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Content Präferenzen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Anzahl der "Gefällt mir"-Angaben und geteilten Inhalte
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Abos
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Deine App und Medien</h3>
+            <div class="section-objects">
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Archivieren und Herunterladen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Anzeigemodus ändern
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Sprache
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Webseite Berechtigungen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Für Familien</h3>
+            <div class="section-objects">
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Familienbereich
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Weitere Informationen und Support-Möglichkeiten</h3>
+            <div class="section-objects">
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    QR-Code
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Hilfe
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Kontostatus
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Problem melden
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/#####') }}" alt="Sprache Icon" class="left-img">
+                    Mehr
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut" style="color: red;">Abmelden</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

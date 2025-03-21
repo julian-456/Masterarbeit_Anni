@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontenübersicht</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/kontenübersicht.css') }}">
+</head>
+<body>
+    <div class="container">
+        <a href="{{ '/kontenübersicht'}}">
+            <img src="{{ url_for('static', filename='pictures/go_back.png') }}" alt="Sprache Icon" class="back-img">
+        </a>
+
+        <h2>Deine Informationen und Berechtigungen</h2>
+        <div class="section">
+            <div class="section-objects">
+                <div class="option-ausgegraut">
+                    Deine Informationen herunterladen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    Kopie deiner Informationen übertragen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    Suchervelauf
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <h3>Du kannst deine Informationen und Aktivitäten in unseren Apps einsehen, herunterladen und übertragen.</h3>
+            <div class="section-objects">
+                <div class="option" onclick="redirectTo('/in_arbeit')">
+                    Deine Aktivitäten außerhalb von Meta-Technologien
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    Besondere Werbepartner
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    Kontakte hochladen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    Cookies verwalten
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontenübersicht</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/kontenübersicht.css') }}">
+</head>
+<body>
+    <div class="container">
+        <a href="{{ '/'}}">
+            <img src="{{ url_for('static', filename='pictures/go_back.png') }}" alt="Sprache Icon" class="back-img">
+        </a>
+        <h2>Kontenübersicht</h2>
+        <div class="central_hl">Kontoübersicht</div>
+        <div class="central_txt">Verwalte deine verknüpften Funktionen und Kontoeinstellungen für Meta-Technologien wie Facebook, Instagram und Meta Horizon.</div>
+        <div class="section">
+            <img src="{{ url_for('static', filename='pictures/Profil.png') }}" alt="Sprache Icon" class="test-img">
+            
+        </div>
+
+
+        <div class="section">
+            <h3>Verknüpfte Funktionen</h3>
+            <div class="section-objects">
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/profil_bearbeiten') }}" alt="Sprache Icon" class="left-img">
+                    Profilübergreifendes Teilen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/profil_bearbeiten') }}" alt="Sprache Icon" class="left-img">
+                    Mit Konten anmelden
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Kontoeinstellungen</h3>
+            <div class="section-objects">  
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/profil_bearbeiten') }}" alt="Sprache Icon" class="left-img">
+                    Passwort und Sicherheit
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/profil_bearbeiten') }}" alt="Sprache Icon" class="left-img">
+                    Personenbezogene Daten
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option" onclick="redirectTo('/informationen_berechtigungen')">
+                        <img src="{{ url_for('static', filename='pictures/profil_bearbeiten') }}" alt="Sprache Icon" class="left-img">
+                        Deine Informationen und Berechtigungen
+                        <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option" onclick="redirectTo('/in_arbeit')">
+                    <img src="{{ url_for('static', filename='pictures/profil_bearbeiten') }}" alt="Sprache Icon" class="left-img">
+                    Werbepräferenzen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/profil_bearbeiten') }}" alt="Sprache Icon" class="left-img">
+                    Meta Pay
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option-ausgegraut">
+                    <img src="{{ url_for('static', filename='pictures/profil_bearbeiten') }}" alt="Sprache Icon" class="left-img">
+                    Zeige anderen, dass dein Profil verifiziert wurde
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

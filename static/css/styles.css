@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    font-size: 18px;
+    color: #333;
+}
+.section {
+    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: none;
+}
+
+.section-objects {
+    border: 1px solid #00000062; 
+    border-radius: 15px; 
+    padding: 5px;
+}
+
+.section h3 {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #555;
+}
+.option {
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung */
+    gap: 10px; /* Abstand zwischen Icon und Text */
+    padding: 8px 0;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.option img{
+    width: 8%;  /* Icon-Größe anpassen */
+    height: 8%;
+}
+
+.left-img{
+    width: 8%;  /* Icon-Größe anpassen */
+    height: 8%;
+    margin-right: 2px;
+}
+
+.right-img{
+    width: 8%;  /* Icon-Größe anpassen */
+    height: 8%;
+    margin-left: 20px; /* Optional: Abstand zwischen Text und Bild auf der rechten Seite */
+    margin-left: auto;  /* Stellt sicher, dass das Bild nach rechts verschoben wird */
+}
+
+.option:hover {
+    color: #0095f6;
+}
+
+
+central_hl {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+central_txt {
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.option-ausgegraut {
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung */
+    gap: 10px; /* Abstand zwischen Icon und Text */
+    padding: 8px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #999;
+}
