@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontenübersicht</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <a href="{{ '/'}}">
+            <img src="{{ url_for('static', filename='pictures/go_back.png') }}" alt="Sprache Icon" class="back-img">
+        </a>
+
+        <h2>Datenschutz auf Instagram</h2>
+        <div class="subtext">
+            <p>
+                Instagram ist ein datenintensiver Dienst. Dennoch möchten wir deine Privatsphäre bestmöglich schützen. 
+                Hier findest du eine kurze Zusammenfassung der wichtigsten Punkte unserer <span style="color: blue;">Datenschutzrichtlinie</span>.
+            </p>
+        </div>
+        
+        
+        <div class="sub-content">
+            <h4>Löschung von Inhalten:</h4>
+            <div class="subtext">
+                <p>
+                    Nachdem wir eine Löschanfrage erhalten, kann es bis zu 90 Tage dauern, bis der Inhalt vollständig entfernt ist. 
+                    Inhalte im Papierkorb werden automatisch nach 30 Tagen gelöscht. Zusätzlich kann es bis zu 90 weitere Tage dauern, 
+                    um gelöschte Inhalte aus Sicherungskopien und Notfallwiederherstellungssystemen zu entfernen. 
+                    In <span style="color: blue;">bestimmten Fällen</span> kann die Löschung länger dauern. Datenschutzrichtlinie.
+                </p>
+            </div>
+        </div>
+
+        <div class="sub-content">
+            <h4>Datenteilung:</h4>
+            <div class="subtext">
+                <p>
+                    Wir geben deine Daten nur an externe Partner weiter, wenn du ausdrücklich zugestimmt hast. Deine Daten werden nicht verkauft.
+                </p>
+            </div>
+        </div>
+
+        <div class="sub-content">
+            <h4>Datenverarbeitung in den USA:</h4>
+            <div class="subtext">
+                <p>
+                    Da wir ein internationaler Konzern sind, können deine Daten auf US-Servern verarbeitet werden. 
+                    Meta ist nach dem <span style="color: blue;">EU-US Data Privacy Framework</span> zertifiziert, das ein DSGVO-konformes Schutzniveau sicherstellt.
+                </p>
+            </div>
+        </div>
+
+        <div class="sub-content">
+            <h4>Deine Rechte:</h4>
+            <div class="subtext">
+                <p>
+                    Du kannst bestimmte Datenschutzrechte, wie das <span style="color: blue;"> Recht auf Information, Datenübertragbarkeit und Löschung </span>, 
+                    direkt in deinem Account automatisiert ausüben. So erhältst du schnell eine Rückmeldung, 
+                    auch bei hoher Anzahl an Nutzeranfragen.
+                </p>
+            </div>
+        </div>
+
+        <div class="sub-content">
+            <h4>Datenschutzbeschwerden:</h4>
+            <div class="subtext">
+                <p>
+                    Beschwerden kannst du an deine lokale Datenschutzbehörde richten. 
+                    Diese prüft unsere Datenverarbeitung und sorgt für Transparenz und mögliche Korrekturen.
+                </p>
+            </div>
+        </div>
+
+        <div class="sub-content">
+            <h4>Notwendige Datenverarbeitung:</h4>
+            <div class="subtext">
+                <p>
+                    Instagram verarbeitet deine Daten nur, wenn wir dich vorher darüber informieren. 
+                    In unserer Datenschutzrichtlinie erfährst du, welche Daten für die Nutzung des Dienstes erforderlich sind.
+                </p>
+            </div>
+        </div>
+
+        
+
+
+        
+        <!-- Hier muss nochmal was angepasst werden -->
+
+        <h2>Schutz deiner Daten:</h2>
+        <div class="subtext">
+            <p>
+                Um dein Nutzererlebnis zu verbessern, hast du uns die Einwilligung gegeben, bestimmte Daten zu verarbeiten. 
+                Wenn du eine Einwilligung widerrufst, sind wir gesetzlich verpflichtet, die Verarbeitung der betreffenden Daten sofort einzustellen. 
+                Hier siehst du alle aktiven Einwilligungen auf einen Blick. Überprüfe, ob du deine Daten weiterhin teilen möchtest. 
+            </p>
+
+            <p>
+                Zum Widerruf deiner Einwilligung schiebe den Regler nach links. Sind alle Regler auf der linken Seite, 
+                werden nur die für die Bereitstellung des Dienstes notwendigen Daten verarbeitet – keine darüber hinaus.
+            </p>
+
+        </div>
+
+        <div class="section">
+            <div class="sub-sction-privacy">
+                <div class="slider-headline">
+                    <span>Deine Aktivitäten außerhalb von Meta-<br>Technologien</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                
+                <div class="subtext">
+                    <p>Informationen, die Unternehmen und Organisationen zu deinen Interaktionen mit ihnen an uns übermitteln, werden zukünftig verknüpft. 
+                    Cookies helfen uns dabei, den Dienst für dich zu verbessern. <span style="color: blue;">Mehr dazu</span>
+                    </p>
+                      
+                    <p>Einstellungen -> Kontoübersicht -> Deine Informationen und Berechtigungen -> 
+                    Deine Aktivität außerhalb von Meta-Technologien -> Künftige Aktivitäten verwalten</p>
+
+                </div>
+            </div>
+
+            <div class="sub-sction-privacy">
+                <div class="slider-headline">
+                    <span>Meine Aktivitäten verwenden, um mir <br> Werbung für Meta zu zeigen</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                
+                <div class="subtext">
+                    <p>Meine Aktivitäten in Meta-Technologien verwenden, um mir Werbung für Meta auf anderen Plattformen zu zeigen. <span style="color: blue;">Mehr dazu</span>
+                    </p>
+                      
+                    <p>Einstellungen -> Kontoübersicht -> Werbepräferenzen -> Einstellungen für Werbung -> Werbung für Meta </p>
+
+                </div>
+            </div>
+            <div class="sub-sction-privacy">
+                <div class="slider-headline">
+                    <span>Profilbilderweiterung zulassen</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                
+                <div class="subtext">
+                    <p>Verwende eine größere Version deines Profilbilds, damit du leichter zu erkennen bist. Dein Profilbild ist immer für alle sichtbar. <span style="color: blue;">Mehr dazu</span>
+                    </p>
+                      
+                    <p>Einstellungen -> Konto-Privatsphäre -> Profilbilderweiterung zulassen</p>
+
+                </div>
+            </div>
+
+            <div class="sub-sction-privacy">
+                <div class="slider-headline">
+                    <span>Lesebestätigung anzeigen</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                
+                <div class="subtext">
+                    <p> Andere können dann sehen, wenn du ihre Nachrichten gelesen hast. <span style="color: blue;">Mehr dazu</span>
+                    </p>
+                      
+                    <p>Einstellungen -> Nachrichten und Story-Antworten -> Lesebestätigung anzeigen</p>
+
+                </div>
+            </div>
+            <div class="sub-sction-privacy">
+                <div class="slider-headline">
+                    <span>Weitere Maßnahmen</span>
+                </div>
+                
+                <div class="subtext">
+                    <p>Folgende weitere Maßnahmen stehen dir zur Verfügung, um deine Privatsphäre zu erhöhen:</p>
+                    <p>Überprüfe deine Einstellungen zu den <span style="color: blue;">Ordnungsdiensten</span>.</p>
+                    <p>Hast du dein Instagram-Konto mit anderen Konten verknüpft? <span style="color: blue;">Hier</span> erfährst du es.</p>
+                    <p>Schalte <span style="color: blue;">hier</span> deine Sicherheitswarnungen an.  </p>
+                    <p>Führe regelmäßig den <span style="color: blue;">Privatsphäre-Check durch.</span></p>
+
+                </div>
+            </div>
+        </div>
+        
+        <button class="button" onclick="window.open('https://help.instagram.com/155833707900388', ' blank')">Datenschutzrichtlinie ansehen</button>
+        
+    
+    </div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

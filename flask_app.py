@@ -29,6 +29,10 @@ def in_arbeit():
 def privacycenter():
     return render_template("Privacycenter_Anni.html")
 
+@app.route("/privacycenter_and_overview")
+def privacycenter_and_overview():
+    return render_template("Privacycenter_overview_Anni.html")
+
 @app.route("/privacyoverview")
 def privacyoverview():
     return render_template("Privacyoverview_Anni.html")
