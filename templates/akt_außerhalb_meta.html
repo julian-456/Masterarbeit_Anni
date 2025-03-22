@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontenübersicht</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <a href="{{ '/informationen_berechtigungen'}}">
+            <img src="{{ url_for('static', filename='pictures/go_back.png') }}" alt="Sprache Icon" class="back-img">
+        </a>
+
+
+        <h4>Deine Aktivitäten außerhalb von Meta-Technologien</h4>
+        <div class="subtext">
+            <p>
+                Als Aktivitäten außerhalb von Meta-Technologien bezeichnen wir Informationen zu deinen Interaktionen mit Unternehmen und Organisationen, 
+                die diese mit uns teilen. Als Interaktion gilt zum Beispiel, wenn du eine App öffnest oder eine Webseite besuchst. 
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="section-objects">
+                <div class="option" onclick="redirectTo('wrong_site4')">
+                    <img src="{{ url_for('static', filename='pictures/außerhalb_meta.png') }}" alt="Sprache Icon" class="left-img">
+                    Erfahre mehr über Aktivitäten außerhalb von Meta Meta-Technologien
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+
+        <h4>Das kannst du tun</h4>
+        <div class="subtext">
+            <p>
+                Du kannst kontrollieren, welche Informationen Unternehmen an Meta übermitteln, und sie auch komplett von deinem Konto löschen. 
+            </p>
+        </div>
+        
+        <div class="section">
+            <div class="section-objects">
+                <div class="img-double-txt" >
+                    
+                    <img src="{{ url_for('static', filename='pictures/neueste_aktiv.png') }}" alt="Sprache Icon" class="left-double-txt-img">
+                    
+                    <div class="double-txt">
+                        <div class="double-txt-title-grey">Neueste Aktivitäten</div>
+                        <div class="double-txt-subtitle-grey">Aktuell sind keine Aktivitäten vorhanden.</div>
+                    </div>
+                    
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-double-txt-img">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" >
+            <div class="section-objects">
+                <div class="option" onclick="redirectTo('wrong_site4')">
+                    <img src="{{ url_for('static', filename='pictures/03 02.png') }}" alt="Sprache Icon" class="left-img">
+                    Bestimmte Aktivitäten trennen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option" onclick="redirectTo('wrong_site4')">
+                    <img src="{{ url_for('static', filename='pictures/03 03.png') }}" alt="Sprache Icon" class="left-img">
+                    Frühere Aktivitäten löschen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option" onclick="redirectTo('/künftige_aktivitäten')">
+                    <img src="{{ url_for('static', filename='pictures/03 04.png') }}" alt="Sprache Icon" class="left-img">
+                    Künftige Aktivitäten verwalten
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+   
+    </div>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

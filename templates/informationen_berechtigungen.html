@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontenübersicht</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/kontenübersicht.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="container">
@@ -15,15 +15,15 @@
         <h2>Deine Informationen und Berechtigungen</h2>
         <div class="section">
             <div class="section-objects">
-                <div class="option-ausgegraut">
+                <div class="option" onclick="redirectTo('wrong_site3')">
                     Deine Informationen herunterladen
                     <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
                 </div>
-                <div class="option-ausgegraut">
+                <div class="option" onclick="redirectTo('wrong_site3')">
                     Kopie deiner Informationen übertragen
                     <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
                 </div>
-                <div class="option-ausgegraut">
+                <div class="option" onclick="redirectTo('wrong_site3')">
                     Suchervelauf
                     <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
                 </div>
@@ -32,21 +32,21 @@
 
 
         <div class="section">
-            <h3>Du kannst deine Informationen und Aktivitäten in unseren Apps einsehen, herunterladen und übertragen.</h3>
+            <h5>Du kannst deine Informationen und Aktivitäten in unseren Apps einsehen, herunterladen und übertragen.</h5>
             <div class="section-objects">
-                <div class="option" onclick="redirectTo('/in_arbeit')">
+                <div class="option" onclick="redirectTo('/akt_außerhalb_meta')">
                     Deine Aktivitäten außerhalb von Meta-Technologien
                     <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
                 </div>
-                <div class="option-ausgegraut">
+                <div class="option" onclick="redirectTo('wrong_site3')">
                     Besondere Werbepartner
                     <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
                 </div>
-                <div class="option-ausgegraut">
+                <div class="option" onclick="redirectTo('wrong_site3')">
                     Kontakte hochladen
                     <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
                 </div>
-                <div class="option-ausgegraut">
+                <div class="option" onclick="redirectTo('wrong_site3')">
                     Cookies verwalten
                     <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
                 </div>

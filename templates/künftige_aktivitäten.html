@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontenübersicht</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <a href="{{ '/akt_außerhalb_meta'}}">
+            <img src="{{ url_for('static', filename='pictures/go_back.png') }}" alt="Sprache Icon" class="back-img">
+        </a>
+
+
+        <h4>Künftige Aktivitäten verwalten</h4>
+        <div class="subtext">
+            <p>
+                Wird für 1 Konto verwendet: 
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="section-objects">
+                <div class="option-radio" onclick="selectOption('option1')">
+                    <div class="option-radio-text">
+                        <strong>Künftige Aktivitäten verknüpfen</strong>
+                        <p>Informationen, die Unternehmen und Organisationen zu deinen Interaktionen mit ihnen an uns übermitteln, werden zukünftig verknüpft.</p>
+                    </div>
+                    <div class="radio selected" id="radio1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-objects">
+                <div class="option-radio" onclick="selectOption('option2')">
+                    <div class="option-radio-text">
+                        <strong>Künftige Aktivitäten trennen</strong>
+                        <p>Informationen, die Unternehmen und Organisationen zu deinen Interaktionen mit ihnen an uns übermitteln, werden zukünftig nicht mehr verknüpft.</p>
+                    </div>
+                    <div class="radio" id="radio2"></div>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+        function selectOption(selectedId) {
+            document.getElementById('radio1').classList.remove('selected');
+            document.getElementById('radio2').classList.remove('selected');
+            
+            if (selectedId === 'option1') {
+                document.getElementById('radio1').classList.add('selected');
+            } else {
+                document.getElementById('radio2').classList.add('selected');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -25,5 +25,37 @@ def informationen_berechtigungen():
 def in_arbeit():
     return render_template("in_arbeit.html")
 
+@app.route("/privacycenter")
+def privacycenter():
+    return render_template("Privacycenter_Anni.html")
+
+@app.route("/privacyoverview")
+def privacyoverview():
+    return render_template("Privacyoverview_Anni.html")
+
+@app.route("/akt_außerhalb_meta")
+def akt_außerhalb_meta():
+    return render_template("akt_außerhalb_meta.html")
+
+@app.route("/künftige_aktivitäten")
+def künftige_aktivitäten():
+    return render_template("künftige_aktivitäten.html")
+
+@app.route("/wrong_site")
+def wrong_site():
+    return render_template("wrong_site_1.html")
+
+@app.route("/wrong_site2")
+def wrong_site2():
+    return render_template("wrong_site_2.html")
+
+@app.route("/wrong_site3")
+def wrong_site3():
+    return render_template("wrong_site_3.html")
+
+@app.route("/wrong_site4")
+def wrong_site4():
+    return render_template("wrong_site_4.html")
+
 if __name__ == '__main__':
     app.run()
