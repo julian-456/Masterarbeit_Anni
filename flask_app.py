@@ -61,5 +61,13 @@ def wrong_site3():
 def wrong_site4():
     return render_template("wrong_site_4.html")
 
+@app.route("/wrong_site5")
+def wrong_site5():
+    return render_template("wrong_site_5.html")
+
+@app.route("/privacy_center")
+def privacy_center():
+    return render_template("privacy_center.html")
+
 if __name__ == '__main__':
     app.run()

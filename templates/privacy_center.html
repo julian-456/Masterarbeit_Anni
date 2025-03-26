@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einstellungen</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <a href="{{ '/'}}">
+            <img src="{{ url_for('static', filename='pictures/go_back.png') }}" alt="Sprache Icon" class="back-img">
+        </a>
+        <div class="central_hl">Kontoübersicht</div>
+        <div class="central_txt">Verwalte deine verknüpften Funktionen und Kontoeinstellungen für Meta-Technologien wie Facebook, Instagram und Meta Horizon.</div>
+
+        <h3>Privatsphäre ist ein zentraler Bestandteil unserer Produkte</h3>
+               
+        <div>
+            <a href="{{ '/wrong_site5'}}">
+                <img src="{{ url_for('static', filename='pictures/041.png') }}" alt="Sprache Icon" class="bild_breit">
+            </a>
+        </div>
+
+        <h3>Einstellungen, die dir helfen, über deine Privatsphäre zu bestimmen</h3>
+        <subtext> Mit unseren nutzerfreundlichen Einstellungen kannst du die richtigen Privatsphäre-Einstellungen für dich treffen.</subtext>
+        
+        <a href="{{ '/wrong_site5'}}">
+            <img src="{{ url_for('static', filename='pictures/042.png') }}" alt="Sprache Icon" class="bild_breit">
+        </a>
+        
+        <button class="button" onclick="redirectTo('/wrong_site5')">Einstellungen überprüfen</button>
+
+        <h3>Informationen zu Datenschutz und Privatsphäre</h3>
+        <subtext> Hier kannst du sich über Datenschutz informieren und deine Privatsphäre verwalten.</subtext>
+        
+        <a href="{{ '/wrong_site5'}}">
+            <img src="{{ url_for('static', filename='pictures/043.png') }}" alt="Sprache Icon" class="bild_breit">
+        </a>
+        <!-- Button mit "alle Themen ansehen" Button einfügen-->
+        <button class="button_grey" onclick="redirectTo('/wrong_site5')">Alle Themen ansehen</button>
+
+        <div class="section-objects">
+            <div class="img-double-txt" onclick="redirectTo('wrong_site5')">
+                
+                <img src="{{ url_for('static', filename='pictures/02 Konten.png') }}" alt="Sprache Icon" class="left-double-txt-img">
+                
+                <div class="double-txt">
+                    <div class="double-txt-title-grey">Deine Konten verwalten</div>
+                    <div class="double-txt-subtitle-grey">Kontenübersicht</div>
+                </div>
+                
+                <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-double-txt-img">
+                
+            </div>
+        </div>
+
+        <h3>Erfahre mehr darüber, wie sich Meta für den Datenschutz einsetzt</h3>
+        <subtext> Hier findest du weitere Ressourcen, mit Infos dazu, wie Meta Datenschutz in seine Produkte integriert.</subtext>
+
+        <div class="section">
+            <div class="section-objects">
+                <div class="option" onclick="redirectTo('wrong_site5')">
+                    <img src="{{ url_for('static', filename='pictures/044.png') }}" alt="Sprache Icon" class="left-img">
+                    Zusätzliche Privatsphäre Ressourcen
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+
+        <h3>Weitere Infos findest du in der Datenschutzrichtlinie</h3>
+        <!-- Bild mit der Datenschutzrichtlinie einfügen -->
+        <a href="https://privacycenter.instagram.com/policy" target="_blank">
+            <img src="{{ url_for('static', filename='pictures/045.png') }}" alt="Sprache Icon" class="bild_breit">
+        </a>
+
+        <h3>Weitere Privatsphäre-Einstellungen</h3>
+        <subtext> Hier gelangst du direkt zu deinen Einstellungen für Facebook und den Messanger oder für Instagram</subtext>
+
+        <div class="section">
+            <div class="section-objects">
+                <div class="option" onclick="redirectTo('wrong_site5')">
+                    <img src="{{ url_for('static', filename='pictures/Facebook.png') }}" alt="Sprache Icon" class="left-img">
+                    Facebook
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+                <div class="option" onclick="redirectTo('/')">
+                    <img src="{{ url_for('static', filename='pictures/046.png') }}" alt="Sprache Icon" class="left-img">
+                    Instagram
+                    <img src="{{ url_for('static', filename='pictures/arrow.png') }}" alt="Sprache Icon" class="right-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>

@@ -150,12 +150,12 @@ h2 {
 .double-txt-title-grey{
     font-weight: bold;
     font-size: 16px;
-    color: #999;
+    color: #555;
 }
 
 .double-txt-subtitle-grey{
     font-size: 16px;
-    color: #999;
+    color: #555;
 }
 
 
@@ -254,6 +254,23 @@ input:checked + .slider:before {
     cursor: pointer;
     width: 100%;
 }
+
+.button_grey {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
 
 h4 {
     font-size: 16px;
@@ -374,4 +391,11 @@ h4 {
     width: 48%; 
     box-sizing: border-box; 
     margin-right: 2%;
+}
+
+
+.bild_breit {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
 }
