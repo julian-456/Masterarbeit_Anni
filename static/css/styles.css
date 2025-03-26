@@ -5,6 +5,10 @@ body {
     background-color: #f8f8f8;
 }
 .container {
+    /*float: right;
+    width: 48%;
+    box-sizing: border-box;
+    margin-left: 2%;*/
     max-width: 400px;
     margin: 20px auto;
     background: white;
@@ -231,7 +235,9 @@ input:checked + .slider:before {
 .subtext {
     margin-top: 5px; /* Abstand zwischen Headline und Testtext */
     color: #999;
-    font-size: 12px;
+    font-size: 14px;
+    margin-right: 20px;
+    text-align: justify;
 }
 
 .button {
@@ -325,6 +331,7 @@ h4 {
     font-family: Arial, sans-serif;
     color: #555;
     font-size: 14px;
+    color: #999;
 }
 
 .headline_hidden {
@@ -332,4 +339,39 @@ h4 {
     font-weight: bold;
     color: #555;
     margin: 10px 0;
+}
+
+/* Progressbar */
+.progress-bar {
+    width: 20%;
+    height: 10px;
+    background-color: rgb(202, 19, 19);
+    transition: width 0.3s, background-color 0.3s;
+    margin: 20px 0;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.statusTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin: 10px 0;
+}
+
+
+/* Fragestellung daneben packen */
+.body_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.fragestellung {
+    float: left; 
+    width: 48%; 
+    box-sizing: border-box; 
+    margin-right: 2%;
 }
