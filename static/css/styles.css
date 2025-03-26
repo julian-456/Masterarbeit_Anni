@@ -218,7 +218,7 @@ input:checked + .slider:before {
     padding: 5px;
 }
 
-.slider-headline {
+.slider-headline, .head_switch {
     width: 100%; /* Nimmt die gesamte Breite ein */
     display: flex;
     justify-content: space-between; /* Text links, Switch rechts */
@@ -291,4 +291,45 @@ h4 {
     border-radius: 50%;
 }
 
+.space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 20px;
+    width: 100%;
+}
 
+/* Hidden Container */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    align-self: flex-start; /* Links ausrichten */
+    margin-left: 20px; /* Etwas Abstand vom Rand */
+}
+.arrow {
+    transition: transform 0.5s;
+    margin-right: 10px;
+    margin-left: -15px; /* Pfeil weiter nach links verschieben */
+}
+
+.hidden {
+    display: none;
+    
+}
+
+.hiddenText {
+    margin-left: 30px;
+    align-self: flex-start;
+    font-family: Arial, sans-serif;
+    color: #555;
+    font-size: 14px;
+}
+
+.headline_hidden {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin: 10px 0;
+}

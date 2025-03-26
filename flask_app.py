@@ -24,7 +24,7 @@ def informationen_berechtigungen():
 @app.route("/in_arbeit")
 def in_arbeit():
     return render_template("in_arbeit.html")
-
+ 
 @app.route("/privacycenter")
 def privacycenter():
     return render_template("Privacycenter_Anni.html")
